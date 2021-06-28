@@ -1,0 +1,231 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Web_Music.GUI.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="./Style/MasterPage_style.css" rel="stylesheet" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+		<asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="style" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <%-- START HEADER --%>
+            <header>
+		<div class="container" id="header">
+			<div>
+				<h1>
+				<a href="Home.aspx" style="line-height: 60px;">
+					<img src="../Image/MasterPage/Logo.png" alt="Di Chuyen Den Trang Home"/>
+				</a>
+			    </h1>
+			<ul>
+				<li><a href="#">Bài Hát</a></li>
+				<li><a href="#">Play list</a></li>
+				<li><a href="#">Tuyển Tập</a></li>
+				<li><a href="#">Video</a></li>
+				<li><a href="#">BXH</a></li>
+				<li><a href="#">Chủ Đề</a></li>
+				<li><a href="#">Top</a></li>
+			</ul>
+			</div>
+			<div>
+				<div>
+				<ul >
+					<li id="test" style="position: relative;">
+						<a href="#" style="line-height:	 75px;display: inline-block;"><img src="../Image/MasterPage/nologin_user.png" alt="" style="width:35px;border-radius: 50%;"></a>
+						<span>
+							<a href="Login.aspx">Đăng nhập</a>
+							<a href="Register.aspx">Đăng kí</a>
+						</span>
+					</li>
+					<li><a href="#"><img src="#" alt=""></a></li>
+					<li><a href="#"><img src="#" alt=""></a></li>
+				</ul>
+			</div>
+			<div style="display: inline-block; padding:6px 20px;margin-top: 8px;line-height: 25px;" id="form">
+				<input type="text" name="search-key" placeholder="Tìm ca sỹ....">
+				<button type="submit" name="key" style="cursor: pointer"><i class="fa fa-search	"></i></button>
+			</div>
+			</div>			
+		</div>
+	</header>
+            <%-- END HEADER --%>
+            <asp:ContentPlaceHolder ID="content" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <%-- START FOOTER --%>
+			<div class=" footer-main">
+        <div class="width">
+            <div class="footer-main--nav">
+                <P class="footer-title footer-title-main">HỖ TRỢ</P>
+                    <ul class="footer-list" style="float: left;">
+                        <li class="footer-list--item">
+                             <i class=" footer-icon fas fa-angle-right"></i>
+                            <a href="#">Trợ giúp</a>
+                        </li>
+                    
+                        <li class="footer-list--item">
+                            <i class="footer-icon fas fa-angle-right "></i>
+                            <a href="#">Sơ đồ</a>
+                        </li>
+                        <li class="footer-list--item">
+                            <i class="footer-icon fas fa-angle-right "></i>
+                            <a href="#">NCCI</a>
+                        </li>
+                        <li class="footer-list--item">
+                            <i class="footer-icon fas fa-angle-right"></i>
+                            <a href="#">Liên hệ quảng cáo</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-list-right">
+                        <li class="footer-list--item">
+                             <i class=" footer-icon fas fa-angle-right"></i>
+                            <a href="#">Chính sách bảo mật</a>
+                        </li>
+                    
+                        <li class="footer-list--item">
+                            <i class="footer-icon fas fa-angle-right "></i>
+                            <a href="#">Chính sách SHTT</a>
+                        </li>
+                        <li class="footer-list--item">
+                            <i class="footer-icon fas fa-angle-right "></i>
+                            <a href="#">Thỏa thuận sử dụng</a>
+                        </li>
+                        
+                    </ul>
+            </div>
+            <div class="footer-main--nav">
+                <P class="footer-title footer-title-main">SẢN PHẨM KHÁC</P>
+                <ul class="footer-list" style="float: left;">
+                    <li class="footer-list--item">
+                         <i class=" footer-icon fas fa-angle-right"></i>
+                        <a href="#">Mobile App</a>
+                    </li>
+                
+                    <li class="footer-list--item">
+                        <i class="footer-icon fas fa-angle-right "></i>
+                        <a href="#">Mobile Web</a>
+                    </li>
+                    <li class="footer-list--item">
+                        <i class="footer-icon fas fa-angle-right "></i>
+                        <a href="#">Smart TV</a>
+                    </li>
+                    <li class="footer-list--item">
+                        <i class="footer-icon fas fa-angle-right"></i>
+                        <a href="#">Desktop</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list-right">
+                    <li class="footer-list--item">
+                         <i class=" footer-icon fas fa-angle-right"></i>
+                        <a href="#">Dịch vụ 3G</a>
+                    </li>
+                
+                    <li class="footer-list--item">
+                        <i class="footer-icon fas fa-angle-right "></i>
+                        <a href="#">PTVA Corp</a>
+                    </li>
+                    <li class="footer-list--item">
+                        <i class="footer-icon fas fa-angle-right "></i>
+                        <a href="#">Tuyển dụng</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="footer-main--nav">
+                <P class="footer-title footer-title-main">TOP TỪ KHÓA</P>
+               <div class="content-key">
+                   <a href="#">Phạm Trần Việt Anh, Trên Tình bạn dưới tình yêu, Rap Việt , Binz</a>
+               </div>
+               <P class="footer-title footer-title-main" style="margin-top:-5px">KẾT NỐI VỚI CHÚNG TÔI</P>
+               <div class="img-social ">
+                   <a href="#">
+                       <img class="img-social-img" src="https://stc-id.nixcdn.com/v11/images/footer/t_ic_facebook.png" alt="">
+                   </a>
+                   <a href="#">
+                       <img  class="img-social-img" src="https://stc-id.nixcdn.com/v11/images/footer/t_ic_instagram.png" alt="">
+                   </a>
+               </div>
+               <ul class="list-download">
+                   <li><a href="#">
+                       <img class="download" src="https://stc-id.nixcdn.com/v11/images/footer/t_google_play.png" alt="">
+                   </a></li>
+                   <li><a href="#">
+                    <img class="download" src="https://stc-id.nixcdn.com/v11/images/footer/t_app_store.png" alt="">
+                </a></li>
+                <li><a href="#">
+                    <img class="download" src="https://stc-id.nixcdn.com/v11/images/footer/t_appgallery.png" alt="">
+                </a></li>
+               </ul>
+            </div>
+        </div>
+
+        <div class="line"></div>
+        
+        <div class="main-bottom">
+            <ul class="main-bottom-list width" >
+                <li> <a href="#">
+                    <img class="logo" src="https://stc-id.nixcdn.com/v11/images/footer/t_logo_company.png" alt="">
+                </a></li>
+
+                <li> 
+                    <div class="cty">
+                        <p style="color: #909090; font-size: 20px; font-weight: bold;">CÔNG TY CỔ PHẦN PTVA</p>
+                        <ul>
+                            <li><p class="cty-text">Chủ sở hữu website: <span style="font-weight:bold"> Công ty PTVA</span></p></li>
+                            <li><p  class="cty-text">Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.</p></li>
+                            <li><p class="cty-text">Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư thành phố Hồ Chí Minh cấp ngày 01/03/2008.</p></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li> <a href="#">
+                    <img class="bocongthuong" src="https://stc-id.nixcdn.com/v11/images/footer/t_bo_cong_thuong.png" alt="">
+                </a></li>
+                <li><a href="#"></a>
+                <img class="hihi" src="https://stc-id.nixcdn.com/v11/images/footer/t_dmca.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+  
+    <div class="footer-bottom">
+        <div class="width">
+            <ul>
+                <li class="footer-bottom-item">
+                    <i class="footer-bottom-icon fas fa-map-marker-alt"></i>
+                    <a href="https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%95+ph%E1%BA%A7n+NCT/@10.7690483,106.6635556,17z/data=!3m1!4b1!4m5!3m4!1s0x31752ee7f4500001:0x4930eba3e1b8ae73!8m2!3d10.7690483!4d106.6657443" target="_blank"><span class="t-icon-address ic_location_active"></span>Tòa nhà FLC - Cầu Giấy - Hà nội</a>
+                </li>
+                <li class="footer-bottom-item">
+                    <i class="footer-bottom-icon far fa-envelope"></i>
+                    <a href="#">support@ptva.com</a>
+                </li>
+                <li class="footer-bottom-item">
+                    <i class="footer-bottom-icon fas fa-phone-alt"></i>
+                    <a href="#">+84.854.572.098</a>
+                </li>
+                <li class="footer-bottom-item">
+                    <a href="#">©Công Ty Cổ Phần Hi Tech</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+            <%-- END FOOTER --%>
+
+        </div>
+    </form>
+</body>
+</html>

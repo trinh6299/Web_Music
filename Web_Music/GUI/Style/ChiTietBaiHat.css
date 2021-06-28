@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+:root{
+    --primary-color:#2daaed;
+}
+.wrap-box{
+    width: 1170px;
+    margin: 0 auto;
+}
+.box-content{
+    display: flex;
+    justify-content: space-between;
+}
+.category-text,.icon-text{
+    font-size: 11px;
+    color: #999999;
+    text-decoration: none;
+}
+.category-text:hover{
+    color: var(--primary-color);
+}
+.category{
+    padding: 5px 0;
+}
+.title-music{
+    width: auto;
+    max-width: 650px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 20px;
+    font-style: normal;
+}
+.name-music,.name-singer{
+    font-weight: 300;
+    display: inline;
+    width: auto;
+    font-size: 22px;
+    color: #000;
+    line-height: 24px;
+    font-style: normal;
+    font-family: 'Roboto',sans-serif ;
+    text-decoration: none;
+}
+.name-singer:hover{
+    color: var(--primary-color);
+}
+.icon-video{
+    color: var(--primary-color);
+    font-size: 22px;
+    margin-left: 10px;
+}
+.views-music{
+  display: inline-block;
+  margin-left: 220px;
+  font-weight: 100;
+  font-size: 19px;
+  color: #666666;
+
+}
+.box-left-music{
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.width-box{
+    width: 840px;
+}
+
+
+.box-left{
+    height: 320px;
+    width: 840px;
+}
+
+/* Box-right */
+.box-right{
+    width: 305px;
+    height: 385px;
+
+}
+.box-right--header{
+    height: 36px;
+    width: 100%;
+    padding: 5px 0;
+}
+.box-right--text{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Roboto',sans-serif;
+    color: var(--primary-color);
+    line-height: 100%;
+}
+.box-right--list ul{
+    padding: 0;
+    margin: 0;
+}
+.box-right--items{
+    width: 100%;
+    padding: 8px 0;
+    list-style: none;
+    border-bottom: 1px solid #77777748;
+    position: relative;
+}
+.box-right--play{
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid #7a7a7a;
+    float: left;
+}
+
+.icon-music{
+    margin-left: 5px;
+   transform: translate(50%,50%);
+   font-size: 12px;
+   color: #7a7a7a;
+   font-weight: 100;
+}
+.info-music{
+    display: inline-block;
+    width: 172px;
+}
+.box-right--song{
+    margin-bottom: 4px;
+  
+}
+.box-right--song a{
+    color: rgb(0 0 0 / 88%);
+    font-size: 18px;
+    font-weight: 200;
+   
+} 
+.box-right--items a{
+    text-decoration: none;
+}
+.box-right--items:last-child{
+    border-bottom: none;
+}
+.box-right--singer{
+    font-size: 12px;
+    line-height: 16px;
+}
+.box-right--singer a{
+    color: #a2a2a2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight:200 ;
+}
+
+.box-right--viewmusic{
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    left: 245px;
+    color: #999999;
+}
+
+/* statusbar */
+.statusbar{
+    height: 40px;
+    margin: 20px 0;
+}
+.statusbar-provided{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.provided--text{
+    margin-left: -155px;
+    margin-top: 10px;
+}
+.provided--text__one{
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.provided--text__two{
+    font-size: 14px;
+    font-weight: bold;
+    color: #0689ba;
+}
+.statusbar--img{
+    height: 55px;
+    width: 55px;
+   float: left;
+}
+.provided--img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.statusbar-list{
+    height: 100%;
+    width:430px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(30%);
+}
+.statusbar-list li{
+    list-style: none;
+
+}
+.statusbar-list li a{
+    text-decoration: none;
+    color: rgb(0 0 0 / 88%);
+    font-weight: 200;
+}
+.statusbar-list li a:hover{
+    color: var(--primary-color);
+}
+
+/* comment */
+.comment{
+    height: 250px;
+    margin-bottom: 20px;
+}
+.reply{
+    font-size: 20px;
+    font-weight: bold;
+    color: #9a9a9a;
+    padding: 20px;
+}
+.box-reply{
+    width: 745px;
+    height: 120px;
+    background-color: darkgray;
+    position: relative;
+    border-radius: 10px;
+}
+.write-comment{
+    margin-left: 25px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top:15px;
+    left: -10px;
+    padding: 5px;
+}
+.button-comment{
+    margin-left: 650px;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+}
+.button-comment button{
+    width: 100%;
+    height: 100%;
+    color: #9a9a9a;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+/* Lyric */
+.lyric{
+    width: 840px;
+    height: 760px;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 30px;
+}
+.lyric-box{
+    padding: 20px;
+}
+.lyric-system--song{
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+}
+.lyric-system--text{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 300;
+    margin: 3px 0;
+}
+
+.lyric-system--text span{
+    color: var(--primary-color);
+}
+.lyric-hr{
+    margin-top: 10px;
+    background-color: #9a9a9a;
+}
+
+
+/*  */
+.list-album{
+    height: 286px;
+    margin-bottom: 20px;
+}
+.list-album>a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.list-album--icon{
+    font-size: 20px;
+    height: 20px;
+}
+.list-album--title{
+    font-size: 22px;
+    font-weight: 400;
+    display: inline-block;
+}
+.list-album--list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.list-album--list>li{
+    width: 152px;
+    height: 230px;
+    list-style: none;
+    margin: 0 20px 10px 0;
+}
+
+.img-album{
+    height: 152px;
+    width: 152px;
+    margin-bottom: 8px;
+}
+.info-album{
+    height: 48px;
+    width: 100%;
+
+}
+.info-album>a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100;
+    color: black;
+}
+.info-album p a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #9a9a9a;
+    margin-bottom: 5px;
+}
